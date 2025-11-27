@@ -19,3 +19,5 @@ app.add_middleware(ElasticAPM, client=apm_client)
 @app.get("/")
 def read_root():
     return {"status": "ok", "message": "Hola desde OpenShift usando Elastic APM"}
+
+application = app
